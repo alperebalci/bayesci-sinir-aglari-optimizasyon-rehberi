@@ -1297,3 +1297,6 @@ Son değerlendirme ölçütü yalnızca tahmin hatası olmamalıdır. Endüstri 
 > **Belirsizliği daha iyi modellemek gerçekten daha iyi operasyonel karar üretiyor mu?**
 
 Bu depo bu sorunun etrafında genişletilebilir.
+## Notebook dosyaları için CI denetimi
+
+[BNN notebook bütünlük kontrolü](.github/workflows/teaching-assets.yml), notebook dosyalarının JSON ve hücre yapısını Python 3.11 ve 3.12 üzerinde doğrular. **BNN eğitimi, posterior kalibrasyonu, Pyro/NumPyro inference, BoTorch optimizasyonu veya GPU hesaplamalarını yürütmez.** Bu ağır araştırma deneyleri için ayrı ve veri/sürüm kontrollü CI gereklidir.
